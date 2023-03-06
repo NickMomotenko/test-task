@@ -5,8 +5,10 @@ import { Title } from "../../components/Title";
 import { menuData, currencyData } from "../../mock/data";
 
 import searchIcon from "../../assets/icons/search.svg";
+import arrowIcon from "../../assets/icons/arrow-2.svg";
 import { Button } from "../../components/Button";
 import { useState } from "react";
+import Icon from "../../components/Icon";
 
 interface DashboardProps {}
 
@@ -20,21 +22,26 @@ export const Dashboard: React.FC<DashboardProps> = () => {
     <div className="dashboard">
       <div className="app__content">
         <div className="app__sidebar">
-          <div className="dashboard__content">
-            <Title text={profileData?.title} />
-            {profileData?.categories?.map(({ id, title }) => {
-              return <div key={id}>{title}</div>;
-            })}
-            <Title text={servicesData?.title} />
-            {servicesData?.categories?.map(({ id, title }) => {
-              return <div key={id}>{title}</div>;
-            })}
+          <div className="app__sidebar-body">
+            <div className="dashboard__content">
+              <Title text={profileData?.title} />
+              {profileData?.categories?.map(({ id, title }) => {
+                return <div key={id}>{title}</div>;
+              })}
+              <Title text={servicesData?.title} />
+              {servicesData?.categories?.map(({ id, title }) => {
+                return <div key={id}>{title}</div>;
+              })}
+            </div>
           </div>
           <Menu />
         </div>
         <div className="app__body">
+          <div className="dashboard__head">
+            <Icon url={searchIcon} />
+            <div className="dashboard__head-title">Select local currency</div>
+          </div>
           <div className="dashboard__paper paper">
-            <div className="dashboard__head"></div>
             <div className="dashboard__input">
               <Input placeholder="Search..." icon={searchIcon} />
             </div>
@@ -53,8 +60,8 @@ export const Dashboard: React.FC<DashboardProps> = () => {
                       <div className="select-list__col">
                         <div className="select-list__icon">
                           <img
-                            src=""
-                            // alt={`${currencyName} icon`}
+                            src={icon}
+                            alt={`${currencyName} icon`}
                             className="select-list__pic"
                           />
                         </div>

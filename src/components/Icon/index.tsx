@@ -1,5 +1,11 @@
-const Icon = () => {
-  return <div>Icon</div>;
+import { ReactSVG } from "react-svg";
+
+interface IconProp {
+  url: string;
+}
+
+const Icon: React.FC<IconProp> = ({ url }) => {
+  return <ReactSVG src={url} wrapper="span" />;
 };
 
 export default Icon;

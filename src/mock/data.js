@@ -1,3 +1,10 @@
+import usdIcon from "../assets/icons/usa.png";
+import europaIcon from "../assets/icons/europa.png";
+import ukIcon from "../assets/icons/uk.png";
+import australiaIcon from "../assets/icons/australia.png";
+import argentinaIcon from "../assets/icons/argentina.png";
+import armeniaIcon from "../assets/icons/armenia.png";
+
 export const menuData = [
   {
     title: "Profile",
@@ -20,11 +27,26 @@ export const menuData = [
 ];
 
 export const currencyData = [
-  { id: 1, icon: "", currency: "USD", currencyName: "United States Dollar" },
-  { id: 2, icon: "", currency: "EUR", currencyName: "Euro" },
-  { id: 3, icon: "", currency: "GBP", currencyName: "British Pound" },
-  { id: 4, icon: "", currency: "AUD", currencyName: "Australian Dollar" },
-  { id: 5, icon: "", currency: "ARS", currencyName: "Argentine peso" },
-  { id: 6, icon: "", currency: "AMD", currencyName: "Armenian dram" },
-  { id: 7, icon: "", currency: "AMD", currencyName: "Armenian dram" },
+  {
+    id: 1,
+    icon: usdIcon,
+    currency: "USD",
+    currencyName: "United States Dollar",
+  },
+  { id: 2, icon: europaIcon, currency: "EUR", currencyName: "Euro" },
+  { id: 3, icon: ukIcon, currency: "GBP", currencyName: "British Pound" },
+  {
+    id: 4,
+    icon: australiaIcon,
+    currency: "AUD",
+    currencyName: "Australian Dollar",
+  },
+  {
+    id: 5,
+    icon: argentinaIcon,
+    currency: "ARS",
+    currencyName: "Argentine peso",
+  },
+  { id: 6, icon: armeniaIcon, currency: "AMD", currencyName: "Armenian dram" },
+  { id: 7, icon: armeniaIcon, currency: "AMD", currencyName: "Armenian dram" },
 ];

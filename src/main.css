@@ -66,6 +66,15 @@ button {
   height: 100%;
 
   position: relative;
+}
+
+.app__body {
+  flex: 1;
+  padding: 0 118px;
+  padding-top: 19px;
+}
+
+.app__sidebar-body {
   padding: 30px 12px 0 12px;
 }
 
@@ -75,5 +84,5 @@ button {
   border-radius: 18px;
   height: 626px;
   width: 525px;
-  flex:1;
+  flex: 1;
 }
