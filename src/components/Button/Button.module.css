@@ -1,0 +1,23 @@
+.button {
+  background: linear-gradient(
+    269.83deg,
+    #9644ff 0.93%,
+    #f33484 49.19%,
+    #ff7a7a 96.45%
+  );
+  border-radius: 212px;
+
+  font-weight: 900;
+  font-size: 13px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+
+  padding: 17px 52px;
+  transition: opacity 0.4s;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}

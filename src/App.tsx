@@ -1,22 +1,15 @@
-import Title from "./components/Title";
+import Container from "./components/Container";
+import Input from "./components/Input";
+import Menu from "./components/Menu";
+import { Title } from "./components/Title";
+import { Dashboard } from "./pages/Dashboard";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn fsasfasfafs
-        </a>
-        <Title />
-      </header>
+    <div className="app">
+      <Container>
+        <Dashboard />
+      </Container>
     </div>
   );
 }

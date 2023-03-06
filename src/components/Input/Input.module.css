@@ -1,0 +1,33 @@
+.input {
+  background: #3e3c55;
+  border-radius: 16px;
+  width: 465px;
+  display: inline-flex;
+  align-items: center;
+  padding: 14px 21px;
+
+  &__body {
+    background: transparent;
+    border: 1px solid transparent;
+    width: 100%;
+    outline: none;
+
+    font-family: "Mulish", sans-serif;
+
+    color: #cac9e9;
+    font-weight: 700;
+    font-size: 15px;
+
+    &::placeholder {
+      color: #cac9e9;
+
+      opacity: 0.5;
+      font-weight: 700;
+      font-size: 15px;
+    }
+  }
+
+  &__icon {
+    margin-right: 9px;
+  }
+}

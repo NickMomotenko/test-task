@@ -1,1 +1,79 @@
-@import "./components/Title.module.css";
+@import "./components/Container/Container.module.css";
+@import "./components/Menu/Menu.module.css";
+
+@import "./components/Input/Input.module.css";
+@import "./components/Title/Title.module.css";
+@import "./components/Button/Button.module.css";
+
+@import "./pages/Dashboard/Dashboard.module.css";
+@import "./pages/History/History.module.css";
+
+* {
+  box-sizing: border-box;
+}
+
+.app {
+  background: #191826;
+}
+
+body,
+html,
+#root,
+.app {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: "Mulish", sans-serif;
+}
+
+#root {
+  overflow: hidden;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  background: transparent;
+  border: 1px solid transparent;
+  padding: 0;
+  cursor: pointer;
+}
+
+.app {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.app__content {
+  height: 747px;
+  border: 1px solid;
+  display: flex;
+}
+
+.app__sidebar {
+  display: flex;
+  background: #2c2b42;
+  width: 370px;
+  height: 100%;
+
+  position: relative;
+  padding: 30px 12px 0 12px;
+}
+
+.paper {
+  padding: 30px;
+  background: #2c2b42;
+  border-radius: 18px;
+  height: 626px;
+  width: 525px;
+  flex:1;
+}
