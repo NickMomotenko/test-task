@@ -1,4 +1,4 @@
-import BaseTemplate from "../../components/BaseTemplate";
+import BaseTemplate from "../../components/common/BaseTemplate";
 
 import { DashboardSidebar } from "./DashboardSidebar";
 import { DashboardBody } from "./DashboardBody";

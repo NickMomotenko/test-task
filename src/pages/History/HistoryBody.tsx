@@ -1,13 +1,13 @@
 import { historyItem } from ".";
-import { Button } from "../../components/Button";
+import { Button } from "../../components/ui/Button";
 
-import Icon from "../../components/Icon";
-import { RowInfo } from "../../components/RowInfo";
+import Icon from "../../components/ui/Icon";
+import { RowInfo } from "../../components/shared/RowInfo";
 import { getIconUrl } from "./helpers";
 
 import copyIcon from "../../assets/icons/copy.svg";
 import arrowIcon from "../../assets/icons/arrow-right.svg";
-import { CurrencyFromTo } from "../../components/CurrencyFromTo";
+import { CurrencyFromTo } from "../../components/common/CurrencyFromTo";
 
 interface HistoryBodyProps {
   item: historyItem | any;

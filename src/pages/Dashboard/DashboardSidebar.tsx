@@ -1,7 +1,7 @@
-import { Title } from "../../components/Title";
-import { List } from "../../components/List";
-import { Item } from "../../components/Item";
-import Icon from "../../components/Icon";
+import { Title } from "../../components/ui/Title";
+import { List } from "../../components/shared/List";
+import { Item } from "../../components/shared/Item";
+import Icon from "../../components/ui/Icon";
 
 import { menuData } from "../../mock/data";
 

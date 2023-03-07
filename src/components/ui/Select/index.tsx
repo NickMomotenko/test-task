@@ -1,6 +1,6 @@
 import Icon from "../Icon";
 
-import trianIcon from "../../assets/icons/triangle.svg";
+import trianIcon from "../../../assets/icons/triangle.svg";
 
 interface SelectProps {
   title: string;

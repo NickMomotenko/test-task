@@ -1,13 +1,13 @@
 import { useState } from "react";
 
-import Input from "../../components/Input";
-import { Button } from "../../components/Button";
+import Input from "../../components/ui/Input";
+import { Button } from "../../components/ui/Button";
 
 import searchIcon from "../../assets/icons/search.svg";
 
 import { currencyData } from "../../mock/data";
 
-import Icon from "../../components/Icon";
+import Icon from "../../components/ui/Icon";
 
 import backIcon from "../../assets/icons/back.svg";
 

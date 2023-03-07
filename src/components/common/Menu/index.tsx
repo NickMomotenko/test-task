@@ -1,11 +1,11 @@
-import homeIcon from "../../assets/icons/home.svg";
-import walletIcon from "../../assets/icons/wallet.svg";
-import buyIcon from "../../assets/icons/buy.svg";
-import exchangeIcon from "../../assets/icons/ex.svg";
-import dashboardIcon from "../../assets/icons/dashboard.svg";
-import historyIcon from "../../assets/icons/history.svg";
+import homeIcon from "../../../assets/icons/home.svg";
+import walletIcon from "../../../assets/icons/wallet.svg";
+import buyIcon from "../../../assets/icons/buy.svg";
+import exchangeIcon from "../../../assets/icons/ex.svg";
+import dashboardIcon from "../../../assets/icons/dashboard.svg";
+import historyIcon from "../../../assets/icons/history.svg";
 import { useState } from "react";
-import Icon from "../Icon";
+import Icon from "../../ui/Icon";
 
 import { Link } from "react-router-dom";
 

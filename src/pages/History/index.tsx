@@ -1,6 +1,6 @@
 import { useState } from "react";
 
-import BaseTemplate from "../../components/BaseTemplate";
+import BaseTemplate from "../../components/common/BaseTemplate";
 import { HistoryBody } from "../History/HistoryBody";
 import { HistorySidebar } from "../History/HistorySidebar";
 
