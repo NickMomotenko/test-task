@@ -1,0 +1,20 @@
+.select-block {
+  background: #232236;
+  border-radius: 18px;
+  font-weight: 600;
+  font-size: 13px;
+  line-height: 27px;
+  color: #cac9e9;
+  opacity: 0.8;
+  padding: 17px 10px;
+
+  cursor: pointer;
+
+  display: flex;
+  align-items: center;
+
+  &__title {
+    color: #fff;
+    margin-right: 26px;
+  }
+}

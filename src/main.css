@@ -6,6 +6,9 @@
 @import "./components/Button/Button.module.css";
 @import "./components/Icon/Icon.module.css";
 @import "./components/Item/Item.module.css";
+@import "./components/Select/Select.module.css";
+@import "./components/RowInfo/RowInfo.module.css";
+@import "./components/CurrencyFromTo/CurrencyFromTo.module.css";
 
 @import "./pages/Dashboard/Dashboard.module.css";
 @import "./pages/History/History.module.css";
@@ -49,6 +52,14 @@ button {
   cursor: pointer;
 }
 
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
 .app {
   display: flex;
   align-items: center;
@@ -56,13 +67,10 @@ button {
 }
 
 .app__content {
-  height: 747px;
-  border: 1px solid;
   display: flex;
 }
 
 .app__sidebar {
-  display: flex;
   background: #2c2b42;
   width: 370px;
   height: 100%;
@@ -76,8 +84,9 @@ button {
 }
 
 .app__sidebar-body {
-  padding: 19px 12px 0 12px;
+  padding-top: 32px;
   width: 100%;
+  height: 747px;
 }
 
 .paper {
@@ -85,8 +94,9 @@ button {
   background: #2c2b42;
   border-radius: 18px;
   height: 626px;
-  max-width: 525px;
+  max-width: 523px;
+  min-width: 523px;
   flex: 1;
 
-  margin:0 auto;
+  margin: 0 auto;
 }

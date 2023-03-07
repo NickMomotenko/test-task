@@ -1,0 +1,62 @@
+.row-info {
+  margin-bottom: 22px;
+  border-bottom: 1px solid #34334a;
+  padding-bottom: 11px;
+  position: relative;
+  cursor: pointer;
+
+  &:last-child {
+    margin-bottom: 0;
+    border-bottom-color: transparent;
+  }
+
+  &--amount {
+    .row-info__data {
+      font-size: 15px;
+      font-weight: 700;
+      color: #07c17e;
+    }
+
+    &-to {
+      color: #f1577b;
+    }
+  }
+
+  &--copy {
+    .row-info__data {
+      justify-content: space-between;
+    }
+  }
+
+  &__title {
+    font-weight: 500;
+    font-size: 14px;
+    text-transform: uppercase;
+    color: #cac9e9;
+
+    opacity: 0.5;
+
+    margin-bottom: 3px;
+  }
+
+  &__data {
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+
+    min-height: 27px;
+  }
+
+  &__icon {
+    &--arrow {
+      margin: 0 11px;
+    }
+
+    &--copy {
+      position: absolute;
+      right: 0;
+      top: 10px;
+    }
+  }
+}

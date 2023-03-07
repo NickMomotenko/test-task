@@ -16,7 +16,7 @@
     &--active {
       .icon {
         * {
-          fill: red;
+          fill: rgba(255, 123, 123, 1);
         }
       }
     }

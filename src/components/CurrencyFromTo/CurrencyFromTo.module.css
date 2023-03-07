@@ -1,0 +1,23 @@
+.currency {
+  display: inline-flex;
+  align-items: center;
+
+  &__from,
+  &__to {
+    font-weight: 500;
+    font-size: 12px;
+    color: #cac9e9;
+
+    opacity: 0.8;
+  }
+
+  &__icon {
+    margin-right: 3px;
+  }
+
+  &--white {
+    * {
+      color: #fff;
+    }
+  }
+}

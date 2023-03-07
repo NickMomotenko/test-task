@@ -1,7 +1,7 @@
 import { ReactSVG } from "react-svg";
 
 interface IconProp {
-  url: string;
+  url: string | any;
 }
 
 const Icon: React.FC<IconProp> = ({ url }) => {

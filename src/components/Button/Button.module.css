@@ -12,6 +12,8 @@
   letter-spacing: 0.08em;
   text-transform: uppercase;
 
+  font-family: "Mulish", sans-serif;
+
   color: #ffffff;
 
   padding: 17px 52px;
@@ -19,5 +21,12 @@
 
   &:hover {
     opacity: 0.8;
+  }
+
+  &--support {
+    background: #232236;
+    border-radius: 212px;
+    color: rgba(255, 123, 123, 1);
+    padding: 17px 37px;
   }
 }

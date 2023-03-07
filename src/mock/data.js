@@ -5,23 +5,32 @@ import australiaIcon from "../assets/icons/australia.png";
 import argentinaIcon from "../assets/icons/argentina.png";
 import armeniaIcon from "../assets/icons/armenia.png";
 
+import stakingIcon from "../assets/icons/staking.svg";
+import nftIcon from "../assets/icons/nft.svg";
+import loansIcon from "../assets/icons/loans.svg";
+import walletConnectIcon from "../assets/icons/wallet-connect.svg";
+import favoriteIcon from "../assets/icons/favorite.svg";
+import settingsIcon from "../assets/icons/settings.svg";
+import securityIcon from "../assets/icons/shield-tick.svg";
+import supportIcon from "../assets/icons/support.svg";
+
 export const menuData = [
   {
     title: "Profile",
     categories: [
-      { id: 1, path: "/", icon: "", title: "Settings" },
-      { id: 2, path: "/", icon: "", title: "Security" },
-      { id: 3, path: "/", icon: "", title: "Support" },
+      { id: 1, path: "/", icon: settingsIcon, title: "Settings" },
+      { id: 2, path: "/", icon: securityIcon, title: "Security" },
+      { id: 3, path: "/", icon: supportIcon, title: "Support" },
     ],
   },
   {
     title: "Services",
     categories: [
-      { id: 1, path: "/", icon: "", title: "Favorite Contacts" },
-      { id: 2, path: "/", icon: "", title: "Staking" },
-      { id: 3, path: "/", icon: "", title: "NFTs" },
-      { id: 4, path: "/", icon: "", title: "Loans" },
-      { id: 5, path: "/", icon: "", title: "Wallet Connect" },
+      { id: 1, path: "/", icon: favoriteIcon, title: "Favorite Contacts" },
+      { id: 2, path: "/", icon: stakingIcon, title: "Staking" },
+      { id: 3, path: "/", icon: nftIcon, title: "NFTs" },
+      { id: 4, path: "/", icon: loansIcon, title: "Loans" },
+      { id: 5, path: "/", icon: walletConnectIcon, title: "Wallet Connect" },
     ],
   },
 ];
@@ -90,4 +99,10 @@ export const historyData = [
     },
     operation_id: "4141ffa5g51515",
   },
+];
+
+export const historySelectData = [
+  { id: 1, title: "All types", categories: [1, 2] },
+  { id: 2, title: "All assets", categories: [1, 2] },
+  { id: 3, title: "Date", categories: [1, 2] },
 ];

@@ -1,14 +1,19 @@
+import { Routes, Route, Navigate } from "react-router-dom";
+
 import Container from "./components/Container";
-import Input from "./components/Input";
-import Menu from "./components/Menu";
-import { Title } from "./components/Title";
 import { Dashboard } from "./pages/Dashboard";
+import History from "./pages/History";
 
 function App() {
   return (
     <div className="app">
       <Container>
-        <Dashboard />
+        <Routes>
+          <Route path="/dashboard" element={<Dashboard />} />
+          <Route path="/history" element={<History />} />
+
+          <Route path="*" element={<Navigate to="/dashboard" replace />} />
+        </Routes>
       </Container>
     </div>
   );

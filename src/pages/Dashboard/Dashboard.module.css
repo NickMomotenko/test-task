@@ -67,6 +67,19 @@
     }
   }
 
+  &__sidebar {
+    max-height: 90%;
+    /* overflow-y: auto; */
+
+    &-block {
+      margin-bottom: 29px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
+    }
+  }
+
   .select-list {
     &__item {
       display: flex;
