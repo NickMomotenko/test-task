@@ -5,6 +5,7 @@ import exchangeIcon from "../../assets/icons/exchange.svg";
 import dashboardIcon from "../../assets/icons/dashboard.svg";
 import historyIcon from "../../assets/icons/history.svg";
 import { useState } from "react";
+import Icon from "../Icon";
 
 const list = [
   { id: 1, icon: homeIcon, title: "Home", path: "/home" },
@@ -22,10 +23,17 @@ const Menu: React.FC = () => {
     <nav className="menu">
       <ul className="menu__list">
         {list.map(({ id, icon, path, title }) => {
+          const isActive = activeItem?.id === id;
+
           return (
-            <li key={id} className="menu__item">
+            <li
+              key={id}
+              className={
+                isActive ? "menu__item menu__item--active" : "menu__item"
+              }
+            >
               <button className="menu__button">
-                <img src={icon} alt={`${title} icon`} />
+                <Icon url={icon} />
               </button>
             </li>
           );

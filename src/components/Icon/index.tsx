@@ -5,7 +5,7 @@ interface IconProp {
 }
 
 const Icon: React.FC<IconProp> = ({ url }) => {
-  return <ReactSVG src={url} wrapper="span" />;
+  return <ReactSVG src={url} wrapper="span" className="icon" />;
 };
 
 export default Icon;

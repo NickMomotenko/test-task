@@ -50,3 +50,44 @@ export const currencyData = [
   { id: 6, icon: armeniaIcon, currency: "AMD", currencyName: "Armenian dram" },
   { id: 7, icon: armeniaIcon, currency: "AMD", currencyName: "Armenian dram" },
 ];
+
+export const historyData = [
+  {
+    id: 1,
+    type: "received",
+    title: "Received",
+    created_at: {
+      day: "30 September, 2022",
+      time: "4:11 PM",
+    },
+    operation_currency: {
+      from: "BTC",
+      to: "USDT",
+    },
+    operation_network: "0.0003 BTC ($5.67)",
+    amount: {
+      from: "+ 60.457150 USDT",
+      to: "- 0.2542 BTC",
+    },
+    operation_id: "4141ffa5g51515",
+  },
+  {
+    id: 2,
+    type: "exchanged",
+    title: "Exchanged",
+    created_at: {
+      day: "30 September, 2022",
+      time: "4:11 PM",
+    },
+    operation_currency: {
+      from: "BTC",
+      to: "USDT",
+    },
+    operation_network: "0.0003 BTC ($5.67)",
+    amount: {
+      from: "+ 60.457150 USDT",
+      to: "- 0.2542 BTC",
+    },
+    operation_id: "4141ffa5g51515",
+  },
+];

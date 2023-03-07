@@ -5,10 +5,12 @@ import { Title } from "../../components/Title";
 import { menuData, currencyData } from "../../mock/data";
 
 import searchIcon from "../../assets/icons/search.svg";
-import arrowIcon from "../../assets/icons/arrow-2.svg";
+import backIcon from "../../assets/icons/back.svg";
 import { Button } from "../../components/Button";
 import { useState } from "react";
 import Icon from "../../components/Icon";
+import { Item } from "../../components/Item";
+import { List } from "../../components/List";
 
 interface DashboardProps {}
 
@@ -25,20 +27,38 @@ export const Dashboard: React.FC<DashboardProps> = () => {
           <div className="app__sidebar-body">
             <div className="dashboard__content">
               <Title text={profileData?.title} />
-              {profileData?.categories?.map(({ id, title }) => {
-                return <div key={id}>{title}</div>;
-              })}
+              <List>
+                {profileData?.categories?.map(({ id, title }) => {
+                  return (
+                    <Item key={id}>
+                      <div className="item__title">{title}</div>
+                      <div className="item__icon">
+                        <Icon url="" />
+                      </div>
+                    </Item>
+                  );
+                })}
+              </List>
               <Title text={servicesData?.title} />
-              {servicesData?.categories?.map(({ id, title }) => {
-                return <div key={id}>{title}</div>;
-              })}
+              <List>
+                {servicesData?.categories?.map(({ id, title }) => {
+                  return (
+                    <Item key={id}>
+                      <div className="item__title">{title}</div>
+                      <div className="item__icon">
+                        <Icon url="" />
+                      </div>
+                    </Item>
+                  );
+                })}
+              </List>
             </div>
           </div>
           <Menu />
         </div>
         <div className="app__body">
           <div className="dashboard__head">
-            <Icon url={searchIcon} />
+            <Icon url={backIcon} />
             <div className="dashboard__head-title">Select local currency</div>
           </div>
           <div className="dashboard__paper paper">

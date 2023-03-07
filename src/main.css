@@ -4,6 +4,8 @@
 @import "./components/Input/Input.module.css";
 @import "./components/Title/Title.module.css";
 @import "./components/Button/Button.module.css";
+@import "./components/Icon/Icon.module.css";
+@import "./components/Item/Item.module.css";
 
 @import "./pages/Dashboard/Dashboard.module.css";
 @import "./pages/History/History.module.css";
@@ -70,12 +72,12 @@ button {
 
 .app__body {
   flex: 1;
-  padding: 0 118px;
   padding-top: 19px;
 }
 
 .app__sidebar-body {
-  padding: 30px 12px 0 12px;
+  padding: 19px 12px 0 12px;
+  width: 100%;
 }
 
 .paper {
@@ -83,6 +85,8 @@ button {
   background: #2c2b42;
   border-radius: 18px;
   height: 626px;
-  width: 525px;
+  max-width: 525px;
   flex: 1;
+
+  margin:0 auto;
 }

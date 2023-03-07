@@ -11,4 +11,14 @@
     align-items: center;
     justify-content: space-between;
   }
+
+  &__item {
+    &--active {
+      .icon {
+        * {
+          fill: red;
+        }
+      }
+    }
+  }
 }

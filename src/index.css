@@ -15,6 +15,9 @@
     align-items: center;
     justify-content: space-between;
   }
+.menu__item--active .icon * {
+          fill: red;
+        }
 .input {
   background: #3e3c55;
   border-radius: 16px;
@@ -73,6 +76,15 @@
 .button:hover {
     opacity: 0.8;
   }
+.item{
+    background: #232236;
+    padding:23px 0;
+    border-bottom: 1px solid ;
+}
+.item__title{
+        color: #fff;
+        font-weight: 500;
+    }
 .dashboard {
   color: red;
 }
@@ -103,20 +115,41 @@
     }
 .dashboard__head {
     text-align: center;
-    margin-bottom: 29px;
+    margin-bottom: 26px;
     display: flex;
+    padding: 0 40px;
+    position: relative;
   }
 .dashboard__head-title {
       font-weight: 700;
       font-size: 18px;
 
       color: #ffffff;
+
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+.dashboard__select-list {
+    overflow: hidden auto;
+    max-height: 89%;
+  }
+.dashboard__select-list::-webkit-scrollbar {
+      width: 5px;
+    }
+.dashboard__select-list::-webkit-scrollbar-thumb {
+      background: #474568;
+      border-radius: 20px;
+    }
+.dashboard__select-list::-webkit-scrollbar-track {
+      background: rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
     }
 .dashboard .select-list__item {
       display: flex;
       background: #232236;
       border-radius: 18px;
-      margin-bottom: 10px;
+      margin-bottom: 9px;
 
       padding: 10px 17px;
       cursor: pointer;
@@ -215,17 +248,19 @@ button {
 }
 .app__body {
   flex: 1;
-  padding: 0 118px;
   padding-top: 19px;
 }
 .app__sidebar-body {
-  padding: 30px 12px 0 12px;
+  padding: 19px 12px 0 12px;
+  width: 100%;
 }
 .paper {
   padding: 30px;
   background: #2c2b42;
   border-radius: 18px;
   height: 626px;
-  width: 525px;
+  max-width: 525px;
   flex: 1;
+
+  margin:0 auto;
 }
